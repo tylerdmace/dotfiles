@@ -31,9 +31,6 @@ settings = {
     user_name = "tylerdmace";
     nick = "tyler";
   };
-  "fe-common/core" = {
-    # This hides Joins, Parts, Quits, and Nick changes globally
-  };
 };
 
 aliases = {
@@ -63,3 +60,5 @@ aliases = {
   NICK = "nick";
   RUN = "script run";
 };
+
+ignores = ( { level = "JOINS PARTS QUITS NICKS"; } );
