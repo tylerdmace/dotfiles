@@ -1,0 +1,65 @@
+servers = (
+  {
+    address = "irc.libera.chat";
+    chatnet = "libera";
+    port = "6697";
+    use_tls = "yes";
+    tls_verify = "yes";
+    autoconnect = "yes";
+  }
+);
+
+chatnets = {
+  libera = {
+    type = "IRC";
+    max_kicks = "4";
+    max_msgs = "4";
+    max_whois = "30";
+  };
+};
+
+channels = (
+  { name = "#openbsd"; chatnet = "libera"; autojoin = "yes"; },
+  { name = "#linux"; chatnet = "libera"; autojoin = "yes"; },
+  { name = "#python"; chatnet = "libera"; autojoin = "yes"; },
+  { name = "#rust"; chatnet = "libera"; autojoin = "yes"; }
+);
+
+settings = {
+  core = { 
+    real_name = "tyler";
+    user_name = "tylerdmace";
+    nick = "tyler";
+  };
+  "fe-common/core" = {
+    # This hides Joins, Parts, Quits, and Nick changes globally
+  };
+};
+
+aliases = {
+  J = "join";
+  WJOIN = "window_join";
+  WNUM = "window number";
+  WCLOSE = "window close";
+  WMOVE = "window move";
+  N = "names";
+  Q = "quit";
+  BYE = "quit";
+  EXIT = "quit";
+  SIGNOFF = "quit";
+  UMODE = "mode $N";
+  WC = "window close";
+  M = "msg";
+  MSG = "msg";
+  AMSG = "ame";
+  AME = "ame";
+  ME = "me";
+  SQUERY = "squery";
+  MQUERY = "mquery";
+  QUERY = "query";
+  NQUERY = "query";
+  UNQUERY = "unquery";
+  CHAT = "chat";
+  NICK = "nick";
+  RUN = "script run";
+};
