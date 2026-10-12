@@ -250,15 +250,15 @@ abstracts = {
 
   # default background for all statusbars. You can also give
   # the default foreground color for statusbar items.
-  sb_background = "%4%w";
-  window_border = "%4%w";
+  sb_background = "%y";
+  window_border = "%y";
 
   # default backround for "default" statusbar group
   #sb_default_bg = "%4";
   # background for prompt / input line
   sb_prompt_bg = "%n";
   # background for info statusbar
-  sb_info_bg = "%8";
+  sb_info_bg = "%y";
   # background for topicbar (same default)
   #sb_topic_bg = "%4";
 

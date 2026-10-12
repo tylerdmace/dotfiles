@@ -12,6 +12,9 @@ servers = (
 chatnets = {
   libera = {
     type = "IRC";
+    sasl_mechanism = "PLAIN";
+    sasl_username = "tylerdmace";
+    sasl_password = "";
     max_kicks = "4";
     max_msgs = "4";
     max_whois = "30";
@@ -19,17 +22,36 @@ chatnets = {
 };
 
 channels = (
+  { 
+    name = "#aeternumindustria";
+    chatnet = "libera";
+    autojoin = "yes";
+  },
+  { name = "#emacs"; chatnet = "libera"; autojoin = "yes"; },
   { name = "#openbsd"; chatnet = "libera"; autojoin = "yes"; },
   { name = "#linux"; chatnet = "libera"; autojoin = "yes"; },
+  { name = "#voidlinux"; chatnet = "libera"; autojoin = "yes"; },
+  { name = "#kernel"; chatnet = "libera"; autojoin = "yes"; },
   { name = "#python"; chatnet = "libera"; autojoin = "yes"; },
-  { name = "#rust"; chatnet = "libera"; autojoin = "yes"; }
+  { name = "#rust"; chatnet = "libera"; autojoin = "yes"; },
+  { name = "#lisp"; chatnet = "libera"; autojoin = "yes"; },
+  { name = "#lean"; chatnet = "libera"; autojoin = "yes"; },
+  { name = "#asm"; chatnet = "libera"; autojoin = "yes"; },
+  { name = "#security"; chatnet = "libera"; autojoin = "yes"; },
+  { name = "#ctf"; chatnet = "libera"; autojoin = "yes"; },
+  { name = "#netsec"; chatnet = "libera"; autojoin = "yes"; },
+  { name = "#hamradio"; chatnet = "libera"; autojoin = "yes"; },
+  { name = "#utah"; chatnet = "libera"; autojoin = "yes"; }
 );
 
 settings = {
   core = { 
     real_name = "tyler";
-    user_name = "tylerdmace";
-    nick = "tyler";
+    user_name = "tyler";
+    nick = "tylerdmace";
+  };
+  "fe-common/core" = {
+    activity_hide_level = "JOINS PARTS QUITS NICKS MODES CRAP CLIENTCRAP NOTICES TOPICS CLIENTNOTICES";
   };
 };
 
